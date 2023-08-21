@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tab Closer</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 5px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+    <h1>Tab Closer</h1>
+    <label for="closingTime">Specify number of minutes:</label>
+    <input type="number" id="closingTime" min="1" step="1" value="1440">
+    <br>
+    <label for="toggleSwitch">Enable Tab Closing:</label>
+    <input type="checkbox" id="toggleSwitch" checked>
+    <br>
+    <button id="saveButton">Save</button>
+</body>
+</html>
